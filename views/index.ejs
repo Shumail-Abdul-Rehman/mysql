@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Whatsapp chats</h1>
+
+    
+    <% for(let chat of chats){ %>
+        <h2>From:<%= chat.from %></h2>
+        <h2>To:<%= chat.to %></h2>
+        <h2>Message:<%= chat.msg %></h2>
+        <h3>Date:<%= chat.createdAt %></h3>
+        <% } %>
+</body>
+</html>
